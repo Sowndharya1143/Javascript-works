@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sent Message</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color:#ffffb3;
+        }
+        .container{
+            background-color: #ffffff;
+            padding:15px;
+            width:75%;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container h2{
+            text-align: center;
+        }
+        .container input{
+            padding:10px;
+            border-radius: 5px;
+            width:50%;
+            border:3px solid #ffffb3;
+            outline:none;
+        }
+        .container input:focus{
+            border:3px solid #ffffb3;
+            border-radius: 5px;
+        }
+        .container button{
+            border:none;
+            padding:10px;
+            margin:10px;
+            font-size: 18px;
+            outline: none;
+            cursor: pointer;
+            background-color: #ffffb3;
+        }
+        #msgDisplay{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>A Message You would like to sent</h2>
+        <input type="text" id="inputText"></input>
+        <button id="btn">Press To Send</button>
+        <h3>Last Message Delivered</h3>
+        <h3 id="msgDisplay"></h3>
+    </div>
+    <script src="SentMsgScript.js"></script>
+</body>
+</html>

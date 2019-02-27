@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="sample" content="html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" href="../Sample/style.css" rel = "stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>SAMPLE</title>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div class="fixedhead">
+        <header class="headerClass">
+            <div  class="nav">
+           <a href="#home" id="navDemo" class="" onclick="myFunction()">HOME</a>
+           <a href="#band" id="navDemo" class="" onclick="myFunction()">BAND</a>
+           <a href="#tour" id="navDemo" class="" onclick="myFunction()">TOUR</a>
+           <a href="#contact" id="navDemo" class="" onclick="myFunction()">CONTACT</a>
+           </div>
+           <div onmouseleave="closeDrop()">
+           <button class="moreButton" onclick="menudrop()">MORE<i class="fa fa-caret-down iconDown"></i></button>
+           <div class="navDrop" id="drop"><ul><li>FIRST</li><li>SECOND</li><li>THIRD</li></ul></div>
+           </div>
+           <i class="fa fa-search searchIcon"></i>
+           <i class="fa fa-bars barIcon" onclick="menudropmobile()"></i>
+           <div class="menunav" id="menudrop"><ul class="menuul"><li class="menuli">BAND</li><li class="menuli">TOUR</li><li class="menuli">CONTACT</li></ul></div>
+        </header>
+        </div>
+
+        <div class="carosole" id="home">
+            <div class="mySlides">
+                <img src="n3.jpg" style="width:100%"/>
+            </div>
+            <div class="mySlides">
+                <img src="n2.jpg" style="width:100%"/>
+            </div>
+            <div class="mySlides">
+                <img src="n1.jpg" style="width:100%"/>
+            </div>
+        </div>
+        <div class="content" id="band">
+            <h6>THE BAND</h6>
+            <i>We love music</i>
+        </div>
+        <div class="tour" id="tour">
+            <button class="ticketsbutton" id="modelbut" onclick="modelfunc()">TICKETS</button>
+           
+        </div>
+        <div class="contact" id="contact">
+            <address >this is first cross,<br/>
+                Non-return,<br/>
+                permanent,<br/>
+                city to die.
+            </address>
+        </div>
+        <div style="height:400px">
+
+        </div>
+    </body>
+</html>

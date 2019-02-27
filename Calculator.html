@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+        :root{
+            --padd :10px;
+        }
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .calculator{
+            flex:0 0 40%;
+        }
+        .screen{
+            width:100%;
+            font-size: 30px;
+            padding:var(--padd);
+            border:none;
+            background-color: black;
+            color:#ffffff;
+        }
+        .buttons{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .yellow-btn{
+            background-color: antiquewhite;
+            color:black;
+            padding:var(--padd);
+            border:1px solid black;
+        }
+        .grey-btn{
+            background-color: gray;
+            color:black;
+            padding:var(--padd);
+            border:1px solid black;
+        }
+        .green-btn{
+            background-color:green;
+            border:1px solid black;
+            padding:var(--padd);
+        }
+        .red-btn{
+            background-color: red;
+            border:1px solid black;
+            padding:var(--padd);
+        }
+        button:hover{
+            background-color: lightblue;
+        }
+        button{
+            flex:0 0 25%;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <form>
+            <input type="text" class="screen"></input>
+        </form>
+        <div class="buttons">
+            <!-- yellow buttons -->
+            <button class="btn yellow-btn" data-num="*">*</button>
+            <button class="btn yellow-btn" data-num="/">/</button>
+            <button class="btn yellow-btn" data-num="-">-</button>
+            <button class="btn yellow-btn" data-num="+">+</button>
+            <!-- grey button -->
+            <button class="btn grey-btn" data-num=".">.</button>
+            <button class="btn grey-btn" data-num="9">9</button>
+            <button class="btn grey-btn" data-num="8">8</button>
+            <button class="btn grey-btn" data-num="7">7</button>
+            <button class="btn grey-btn" data-num="6">6</button>
+            <button class="btn grey-btn" data-num="5">5</button>
+            <button class="btn grey-btn" data-num="4">4</button>
+            <button class="btn grey-btn" data-num="3">3</button>
+            <button class="btn grey-btn" data-num="2">2</button>
+            <button class="btn grey-btn" data-num="1">1</button>
+            <button class="btn grey-btn" data-num="0">0</button>
+            <button class="green-btn" data-num="=">=</button>
+            <button class="red-btn" data-num="c">C</button>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
